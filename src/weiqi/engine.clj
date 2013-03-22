@@ -1,7 +1,7 @@
 (ns weiqi.engine)
 
-(def black-pattern #"AB((\[\w\w\])+)")
-(def white-pattern #"AW((\[\w\w\])+)")
+(def black-pattern #"AB((\[\w\w\]\s*)+)")
+(def white-pattern #"AW((\[\w\w\]\s*)+)")
 (def stone-pattern #"\[(\w\w)\]") 
 
 (defn sgf-to-xy [coord]
